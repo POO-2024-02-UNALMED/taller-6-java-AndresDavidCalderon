@@ -19,6 +19,8 @@ public class Vehiculo {
 		this.precio = precio;
 		this.traccion = traccion;
 		this.fabricante = fabricante;
+		this.peso = peso;
+		Vehiculo.cantidadVehiculos+=1;
 		fabricante.agregarVehiculo();
 		fabricante.getPais().agregarVehiculo();
 	}
