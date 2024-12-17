@@ -11,7 +11,7 @@ public class Vehiculo {
 	private Fabricante fabricante;
 	static int cantidadVehiculos = 0;
 	
-	Vehiculo(String placa,int puertas,float velocidadMaxima,String nombre,int precio,float peso,String traccion,Fabricante fabricante){
+	public Vehiculo(String placa,int puertas,float velocidadMaxima,String nombre,int precio,float peso,String traccion,Fabricante fabricante){
 		this.placa = placa;
 		this.puertas = puertas;
 		this.velocidadMaxima = velocidadMaxima;
@@ -19,6 +19,8 @@ public class Vehiculo {
 		this.precio = precio;
 		this.traccion = traccion;
 		this.fabricante = fabricante;
+		fabricante.agregarVehiculo();
+		fabricante.getPais().agregarVehiculo();
 	}
 
 	public String vehiclosPorTipo(){
