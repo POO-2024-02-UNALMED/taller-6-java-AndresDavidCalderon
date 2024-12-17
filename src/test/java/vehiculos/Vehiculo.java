@@ -20,4 +20,72 @@ public class Vehiculo {
 		this.traccion = traccion;
 		this.fabricante = fabricante;
 	}
+
+	public String getPlaca(){
+		return this.placa;
+	}
+
+	public void setPlaca(String placa){
+		this.placa = placa;
+	}
+
+	public int getPuertas(){
+		return this.puertas;
+	}
+
+	public void setPuertas(int puertas){
+		this.puertas=puertas;
+	}
+
+	public float getVelocidadMaxima(){
+		return this.velocidadMaxima;
+	}
+
+	public void setVelocidadMaxima(float velocidadMaxima){
+		this.velocidadMaxima=velocidadMaxima;
+	}
+
+	public String getNombre(){
+		return this.nombre;
+	}
+
+	public void setNombre(String nombre){
+		this.nombre=nombre;
+	}
+
+	public float getPeso(){
+		return this.peso;
+	}
+
+	public void setPeso(float peso){
+		this.peso = peso;
+	}
+
+	public int getPrecio(){
+		return this.precio;
+	}
+
+	public void setPrecio(int precio){
+		this.precio = precio;
+	}
+
+	public String getTraccion(){
+		return this.traccion;
+	}
+
+	public void setTraccion(String traccion){
+		this.traccion = traccion;
+	}
+
+	public Fabricante getFabricante(){
+		return this.fabricante;
+	}
+
+	public void setFabricante(Fabricante fabricante){
+		this.fabricante = fabricante;
+	}
+
+	static int getCantidadCreados(){
+		return Vehiculo.cantidadVehiculos;
+	}
 }
