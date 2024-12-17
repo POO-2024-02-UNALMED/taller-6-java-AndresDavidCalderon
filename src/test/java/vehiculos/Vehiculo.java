@@ -21,6 +21,10 @@ public class Vehiculo {
 		this.fabricante = fabricante;
 	}
 
+	public String vehiclosPorTipo(){
+		return "Automoviles: "+Automovil.cantidadCreados+"\n Camionetas: "+Camioneta.cantidadCreados+"\n Camiones: "+Camion.cantidadCreados;
+	}
+
 	public String getPlaca(){
 		return this.placa;
 	}
