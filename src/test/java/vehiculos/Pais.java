@@ -28,7 +28,7 @@ public class Pais {
 		this.cantidadVehiculos+=1;
 	}
 
-	public Pais paisMasVendedor(){
+	static public Pais paisMasVendedor(){
 		int maxVentas = 0;
 		Pais masVendedor = null;
 		

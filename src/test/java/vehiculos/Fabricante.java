@@ -39,7 +39,7 @@ public class Fabricante {
 		this.cantidadVehiculos+=1;
 	}
 
-	public Fabricante fabricaMayorVentas(){
+	static public Fabricante fabricaMayorVentas(){
 		int masVentas = -1;
 		Fabricante mayorVendedor = null;
 
